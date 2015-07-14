@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+android:background="#EECFA1"
+
+   >
+
+
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+<!--通过android:background指定背景-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="体重指数计算器"
+        android:textStyle="bold"
+        android:textSize="30sp"
+       android:layout_marginBottom="30dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginLeft="40dp"
+
+
+        android:text="身高:"
+        android:gravity="center"
+        android:textSize="11pt"
+        android:layout_marginBottom="30dp"
+
+        />
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_border2"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/height"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+
+        android:text="m"
+        android:gravity="center"
+        android:textSize="10pt"
+        />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="40dp"
+
+
+            android:text="体重:"
+            android:gravity="center"
+            android:textSize="11pt"
+            android:layout_marginBottom="100dp"
+
+
+            />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_border2"
+            android:layout_marginLeft="20dp"
+
+
+
+            android:id="@+id/weight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+
+            android:text="kg"
+            android:gravity="center"
+            android:textSize="10pt"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="BMI计算"
+
+        android:layout_marginBottom="20dp"
+
+        android:id="@+id/BMIbutton"
+       android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+
+
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:hint="请输入正常的身高和体重！！"
+
+
+        android:layout_below="@+id/BMIbutton"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+
+
+
+        />
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关于BMI"
+
+        android:layout_gravity="center|bottom"
+        android:id="@+id/btn"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+
+
+        />
+
+
+
+
+</RelativeLayout>
+
+
